@@ -14,7 +14,7 @@ public class WeightedDice extends FairDice{
 	public int rollDie() {
 		Random r = new Random();
 		if (r.nextInt(9)+1 <= 7) {
-			super.rollHistory.add(preferredNumber);
+			rollHistory.add(preferredNumber);
 		} else {
 			return super.rollDie();
 		}
